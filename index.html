@@ -22,7 +22,7 @@
     .then(result => {
           // This is the visitor identifier:
           const visitorId = result.visitorId
-          document.getElementById("p").innerHTML = result.FingerprintJS;
+          document.getElementById("myPara").innerHTML = result.FingerprintJS;
 
     //alert("appName " + navigator.appName + " || AppVersion " +  navigator.appVersion + " || enumerateDevices " + navigator.mediaDevices.enumerateDevices + " || mimeTypes " + navigator.mimeTypes + " || platform " + navigator.platform + " || userAgent " + navigator.userAgent)
 
@@ -32,7 +32,7 @@
     <body>
 
         <h1>My First Heading</h1>
-        <p>Testing again...</p>
+        <p id="myPara">Testing again...</p>
 
     </body>
 </html>
