@@ -22,10 +22,11 @@
     .then(result => {
           // This is the visitor identifier:
           const visitorId = result.visitorId
-          console.log(visitorId)
-    //alert("Hello Mr. " + visitorId + " :)")
-    alert("appName " + navigator.appName + " || AppVersion " +  navigator.appVersion + " || enumerateDevices " + navigator.mediaDevices.enumerateDevices + " || mimeTypes " + navigator.mimeTypes + " || platform " + navigator.platform + " || userAgent " + navigator.userAgent)
-        })
+          document.getElementById("p").innerHTML = result.FingerprintJS;
+
+    //alert("appName " + navigator.appName + " || AppVersion " +  navigator.appVersion + " || enumerateDevices " + navigator.mediaDevices.enumerateDevices + " || mimeTypes " + navigator.mimeTypes + " || platform " + navigator.platform + " || userAgent " + navigator.userAgent)
+
+  })
 
     </script>
     <body>
